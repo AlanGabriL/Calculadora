@@ -1,10 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@400;500;600;700&display=swap');
-
-html {
-  font-size: 62.5%;
+.darkMode:root {
+  --color-background: #000000c9;
+  --color-orange: #ff570a;
+  --color-text: #ffffff;
+}
+:root {
   --color-background: #ffffff;
   --color-orange: #ff570a;
-  --color-gray: #564848;
+  --color-text: #272222;
+}
+html {
+  background-color: var(--color-background);
+  font-size: 62.5%;
+  transition: all 0.8s;
 }
 * {
   margin: 0;
@@ -12,14 +20,32 @@ html {
   box-sizing: border-box;
   font-family: 'Reem Kufi', sans-serif;
 }
+/* Button DarkMode */
+.btn-darkMode {
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+}
+.btn-darkMode > button {
+  padding: 0.7rem;
+  border: 0.1rem solid var(--color-orange);
+  background-color: transparent;
+  color: var(--color-text);
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.btn-darkMode > button:hover {
+  color: var(--color-background);
+  background-color: var(--color-orange);
+}
 
 /* Tag p and Tag h1 */
-
 h1 {
   color: var(--color-orange);
 }
 p {
-  color: var(--color-gray);
+  color: var(--color-text);
 }
 h1,
 p {
@@ -46,4 +72,36 @@ nav {
   align-items: center;
   justify-content: center;
   margin: 5.5rem 0 10rem 0;
+}
+
+/* Button Home */
+.button-home {
+  cursor: pointer;
+  display: flex;
+  position: absolute;
+  top: 1.2rem;
+  left: 1.2rem;
+  width: 3.5rem;
+  height: 3.5rem;
+  background-color: var(--color-orange);
+  border-radius: 1rem;
+  opacity: 0.5;
+  transition: opacity 0.5s;
+}
+.button-home:hover {
+  opacity: 1;
+}
+.button-home:hover p {
+  transform: translateX(0.5rem);
+  opacity: 1;
+}
+.button-home > img {
+  margin: 0.6rem;
+}
+.button-home > p {
+  transform: translateX(-0.5rem);
+  opacity: 0;
+  transition: all 1s;
+  margin: 0.7rem;
+  font-size: 1.5rem;
 }
