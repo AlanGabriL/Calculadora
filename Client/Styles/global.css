@@ -14,14 +14,37 @@ html {
 }
 
 /* Tag p and Tag h1 */
-h1,
-p {
-  text-align: center;
-  margin: 0 3rem;
-}
+
 h1 {
   color: var(--color-orange);
 }
 p {
   color: var(--color-gray);
+}
+h1,
+p {
+  text-align: center;
+  margin: 0 3rem;
+}
+a {
+  color: var(--color-orange);
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+/* Nav */
+nav h1 {
+  text-align: center;
+  font-size: 4rem;
+  margin-bottom: 3rem;
+}
+nav p {
+  font-size: 2.3rem;
+}
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 5.5rem 0 10rem 0;
 }

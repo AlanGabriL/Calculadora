@@ -8,10 +8,43 @@
     <!-- styles -->
     <link
       rel="shortcut icon"
-      href="./assets/Icon/favicon-32x32.png"
+      href="../assets/Icon/favicon.ico"
       type="image/x-icon"
     />
-    <link rel="stylesheet" href="./Styles/global.css" />
+    <link rel="stylesheet" href="../Styles/global.css" />
+    <link rel="stylesheet" href="../Styles/imc.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="button-home">
+      <img src="../assets/Home.svg" alt="Imagem de Casa" />
+      <p>Voltar</p>
+    </div>
+    <nav>
+      <h1>IMC</h1>
+      <h1>Índice de Massa Corpórea</h1>
+      <p>
+        Criado no século 19 pelo matemático Lambert Quételet, o Índice de Massa
+        Corporal, conhecido pela sigla IMC, é um cálculo simples que permite
+        medir se alguém está ou não com o peso ideal. Ele aponta se o peso está
+        adequado ou se está abaixo ou acima do peso.
+      </p>
+      <p>
+        Para fazer o cálculo, basta dividir o peso pela altura ao quadrado. O
+        número final representa o quanto a pessoa tem de massa muscular + massa
+        de gordura + massa óssea. Com o resultado, o próximo passo é
+        interpretá-lo.
+      </p>
+      <a
+        target="_blank"
+        href="https://www.saudenaosepesa.com.br/diagnostico.html?utm_source=g-search&utm_medium=cpc&utm_content=texto&utm_term=normal&utm_campaign=ogilvybr_novo-nordisk_always-on-performance_g-search_cliques_202205_texto_cpc_calcule-imc"
+        >Saiba mais clicando aqui</a
+      >
+    </nav>
+  </body>
+  <script>
+    var btnHome = document.querySelector('.button-home');
+    btnHome.addEventListener('click', () => {
+      window.location.href = '../index.html';
+    });
+  </script>
 </html>

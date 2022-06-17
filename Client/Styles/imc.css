@@ -1,0 +1,36 @@
+/* Button Home */
+.button-home {
+  display: flex;
+  position: absolute;
+  top: 1.2rem;
+  left: 1.2rem;
+  width: 3.5rem;
+  height: 3.5rem;
+  background-color: var(--color-orange);
+  border-radius: 1rem;
+  opacity: 0.5;
+  transition: opacity 0.5s;
+}
+.button-home:hover {
+  opacity: 1;
+}
+.button-home:hover p {
+  transform: translateX(0.5rem);
+  opacity: 1;
+}
+.button-home > img {
+  margin: 0.6rem;
+}
+.button-home > p {
+  transform: translateX(-0.5rem);
+  opacity: 0;
+  transition: all 1s;
+  margin: 0.7rem;
+  font-size: 1.5rem;
+}
+
+/* nav */
+nav > p {
+  max-width: 123.5rem;
+  margin: 2.5rem 5rem;
+}
