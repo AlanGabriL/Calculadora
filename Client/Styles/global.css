@@ -5,15 +5,12 @@
   --color-orange: #ff570a;
   --color-gray: #564848;
 }
+html {
+  font-size: 62.5%;
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Reem Kufi', sans-serif;
-}
-h1 {
-  color: var(--color-orange);
-}
-p {
-  color: var(--color-gray);
 }
