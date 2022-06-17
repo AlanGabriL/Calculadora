@@ -3,11 +3,13 @@
   --color-background: #000000c9;
   --color-orange: #ff570a;
   --color-text: #ffffff;
+  --color-text-50: #ffffff7e;
 }
 :root {
   --color-background: #ffffff;
   --color-orange: #ff570a;
   --color-text: #272222;
+  --color-text-50: #2722227a;
 }
 html {
   background-color: var(--color-background);
@@ -22,7 +24,7 @@ html {
 }
 /* Button DarkMode */
 .btn-darkMode {
-  position: fixed;
+  position: absolute;
   top: 2rem;
   right: 2rem;
 }
@@ -41,6 +43,10 @@ html {
 }
 
 /* Tag p and Tag h1 */
+span {
+  color: var(--color-orange);
+  font-style: italic;
+}
 h1 {
   color: var(--color-orange);
 }
@@ -49,7 +55,7 @@ p {
 }
 h1,
 p {
-  transition: all 0.7s;
+  transition: color 0.7s;
   text-align: center;
   margin: 0 3rem;
 }
@@ -86,7 +92,7 @@ nav {
   height: 3.5rem;
   background-color: var(--color-orange);
   border-radius: 1rem;
-  opacity: 0.5;
+  opacity: 0.8;
   transition: opacity 0.5s;
 }
 .button-home:hover {
