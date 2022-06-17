@@ -49,6 +49,7 @@ p {
 }
 h1,
 p {
+  transition: all 0.7s;
   text-align: center;
   margin: 0 3rem;
 }
