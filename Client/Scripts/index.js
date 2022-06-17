@@ -5,3 +5,9 @@ function Pages(numPage) {
       window.location.href = 'pages/imc.html';
   }
 }
+
+//tema
+var html = document.querySelector('html');
+function ChangeColor() {
+  html.classList.toggle('darkMode');
+}

@@ -1,10 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@400;500;600;700&display=swap');
-
-html {
-  font-size: 62.5%;
+.darkMode:root {
+  --color-background: #000000c9;
+  --color-orange: #ff570a;
+  --color-text: #ffffff;
+}
+:root {
   --color-background: #ffffff;
   --color-orange: #ff570a;
-  --color-gray: #564848;
+  --color-text: #272222;
+}
+html {
+  background-color: var(--color-background);
+  font-size: 62.5%;
 }
 * {
   margin: 0;
@@ -19,7 +26,7 @@ h1 {
   color: var(--color-orange);
 }
 p {
-  color: var(--color-gray);
+  color: var(--color-text);
 }
 h1,
 p {
