@@ -1,12 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@400;500;600;700&display=swap');
 
-:root {
+html {
+  font-size: 62.5%;
   --color-background: #ffffff;
   --color-orange: #ff570a;
   --color-gray: #564848;
-}
-html {
-  font-size: 62.5%;
 }
 * {
   margin: 0;
