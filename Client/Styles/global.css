@@ -12,12 +12,32 @@
 html {
   background-color: var(--color-background);
   font-size: 62.5%;
+  transition: all 0.8s;
 }
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Reem Kufi', sans-serif;
+}
+/* Button DarkMode */
+.btn-darkMode {
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+}
+.btn-darkMode > button {
+  padding: 0.7rem;
+  border: 0.1rem solid var(--color-orange);
+  background-color: transparent;
+  color: var(--color-text);
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.btn-darkMode > button:hover {
+  color: var(--color-background);
+  background-color: var(--color-orange);
 }
 
 /* Tag p and Tag h1 */
@@ -54,3 +74,4 @@ nav {
   justify-content: center;
   margin: 5.5rem 0 10rem 0;
 }
+/* Teste do Darkmode */
