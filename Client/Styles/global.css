@@ -14,3 +14,16 @@ html {
   box-sizing: border-box;
   font-family: 'Reem Kufi', sans-serif;
 }
+
+/* Tag p and Tag h1 */
+h1,
+p {
+  text-align: center;
+  margin: 0 3rem;
+}
+h1 {
+  color: var(--color-orange);
+}
+p {
+  color: var(--color-gray);
+}

@@ -1,16 +1,4 @@
 /* nav */
-h1,
-p {
-  text-align: center;
-  margin: 0 3rem;
-}
-h1 {
-  color: var(--color-orange);
-}
-p {
-  color: var(--color-gray);
-}
-
 nav {
   display: flex;
   align-items: center;
@@ -26,11 +14,10 @@ nav h1 {
 nav p {
   font-size: 2rem;
 }
-/* main */
 
+/* main */
 .items {
   margin: 0 10%;
-
   display: flex;
   gap: 3rem 10%;
   flex-wrap: wrap;
