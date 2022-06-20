@@ -12,18 +12,18 @@ nav > p {
   font-size: 2.5rem;
 }
 .table-titles {
+  min-width: 30.5rem;
   display: flex;
-  justify-content: center;
-  gap: 9rem;
-  width: 40rem;
+  justify-content: space-between;
+  width: min(40rem, 70%);
   border-bottom: 0.1rem solid var(--color-orange);
   margin: 0 auto;
 }
 .table-items {
+  min-width: 30.5rem;
   border-bottom: 0.1rem solid var(--color-text-50);
-  padding: 0.5rem;
-  gap: 9rem;
-  width: 40rem;
+  padding: 0.5rem 0;
+  width: min(40rem, 70%);
   display: flex;
   margin: 0.2rem auto;
   justify-content: space-between;
@@ -33,4 +33,32 @@ nav > p {
 }
 .table-items:nth-child(2) {
   text-align: right;
+}
+/* Calculator */
+.inputs {
+  margin: 3rem 0;
+}
+.calc > p {
+  margin: 2rem;
+  font-size: 1.5rem;
+  color: var(--color-text-50);
+}
+.input {
+  margin: 2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.input > input {
+  background-color: transparent;
+  color: var(--color-text);
+  padding: 0.7rem;
+  border-radius: 1rem;
+  outline: none;
+  border: 0.1rem solid var(--color-text-50);
+  width: 8rem;
+  text-align: center;
+}
+.input > input:focus {
+  border: 0.1rem solid var(--color-text);
 }

@@ -112,3 +112,13 @@ nav {
   margin: 0.7rem;
   font-size: 1.5rem;
 }
+/* Tira as setas do input */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Tira as setas do input Firefox */
+input[type='number'] {
+  -moz-appearance: textfield;
+}
