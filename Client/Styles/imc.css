@@ -80,7 +80,7 @@ nav > p {
   text-align: center;
 }
 .input > input:focus {
-  border: 0.1rem solid var(--color-text);
+  border: 0.1rem solid var(--color-orange);
 }
 .results > p:first-child {
   font-size: 2rem;
