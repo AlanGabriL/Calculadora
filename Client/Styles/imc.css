@@ -50,7 +50,7 @@ nav > p {
   border: 0.1rem solid var(--color-orange);
   background-color: transparent;
   color: var(--color-text);
-  margin: 3rem 0;
+  margin: 3rem 0 0 0;
   transition: 0.5s;
   cursor: pointer;
 }
@@ -80,4 +80,12 @@ nav > p {
 }
 .input > input:focus {
   border: 0.1rem solid var(--color-text);
+}
+.results > p:first-child {
+  font-size: 2rem;
+  margin: 0.5rem;
+}
+.results > p:last-child {
+  font-size: 1.7rem;
+  margin: 0 0 3rem 0;
 }
