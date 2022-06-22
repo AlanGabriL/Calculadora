@@ -2,14 +2,20 @@
 .darkMode:root {
   --color-background: #000000c9;
   --color-orange: #ff570a;
+  --color-orange-50: #ff580a80;
   --color-text: #ffffff;
   --color-text-50: #ffffff7e;
 }
 :root {
   --color-background: #ffffff;
   --color-orange: #ff570a;
+  --color-orange-50: #ff580a80;
   --color-text: #272222;
   --color-text-50: #2722227a;
+}
+
+::selection {
+  background-color: var(--color-orange-50);
 }
 html {
   background-color: var(--color-background);
@@ -64,7 +70,6 @@ a {
   text-decoration: none;
   font-size: 1.5rem;
 }
-
 /* Nav */
 nav h1 {
   font-size: 4rem;
@@ -85,14 +90,14 @@ nav {
 .button-home {
   cursor: pointer;
   display: flex;
-  position: absolute;
+  position: fixed;
   top: 1.2rem;
   left: 1.2rem;
   width: 3.5rem;
   height: 3.5rem;
   background-color: var(--color-orange);
   border-radius: 1rem;
-  opacity: 0.8;
+  opacity: 0.6;
   transition: opacity 0.5s;
 }
 .button-home:hover {

@@ -1,0 +1,51 @@
+main p {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+}
+.calcFlash {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.calcFlash input {
+  letter-spacing: 0.2rem;
+  text-align: center;
+  height: 3rem;
+  width: 30rem;
+  margin: 2rem 0;
+  padding: 2rem;
+  background-color: transparent;
+  color: var(--color-text);
+  border: 0.1rem solid var(--color-text-50);
+  outline: none;
+  border-radius: 1rem;
+}
+.calcFlash input:focus {
+  border: 0.1rem solid var(--color-orange);
+}
+.separator button {
+  background-color: transparent;
+  color: var(--color-text);
+  border: 0.1rem solid var(--color-orange);
+  border-radius: 1rem;
+  padding: 1rem;
+  color: var(--color-orange);
+  background-color: transparent;
+  transition: 0.4s;
+}
+.separator button:hover {
+  background-color: var(--color-orange);
+  color: var(--color-background);
+}
+.separator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+.calcFlash > p {
+  font-size: 2rem;
+}
+.calcFlash #resultCalc {
+  color: var(--color-orange);
+}

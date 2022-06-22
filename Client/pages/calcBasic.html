@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora Básica</title>
+    <!-- styles -->
+    <link
+      rel="shortcut icon"
+      href="../assets/Icon/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../Styles/global.css" />
+    <link rel="stylesheet" href="../Styles/calcB.css" />
+    <!-- Scripts -->
+    <script src="../Scripts/index.js"></script>
+  </head>
+  <body>
+    <div class="btn-darkMode">
+      <button onclick="ChangeColor()">Tema</button>
+    </div>
+    <div class="button-home" onclick="Home()">
+      <img src="../assets/Home.svg" alt="Imagem de Casa" />
+      <p>Voltar</p>
+    </div>
+    <nav>
+      <h1>Calculadora Básica</h1>
+      <p>
+        Essa calculadora tem como base, suprir calculos pequenos, sem muito
+        estudo e muito calculo envolvido
+      </p>
+    </nav>
+    <main>
+      <div class="calcFlash">
+        <h1>Conta Rápida</h1>
+        <p>
+          Coloque aqui na caixa seus calculos <span>manualmente</span>, e depois
+          clique em <span>Calcular !</span>
+        </p>
+        <div class="separator">
+          <input
+            type="text"
+            placeholder="Insira seu calculo aqui"
+            id="inputCalc"
+          />
+          <button onclick="CalcFlash()">Calcular</button>
+        </div>
+        <p>Resultado :</p>
+        <p id="resultCalc"></p>
+      </div>
+    </main>
+  </body>
+</html>

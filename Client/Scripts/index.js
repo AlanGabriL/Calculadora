@@ -3,15 +3,16 @@ function Pages(numPage) {
   switch (numPage) {
     case 1:
       window.location.href = 'pages/imc.html';
+      break;
+    case 2:
+      window.location.href = 'pages/calcBasic.html';
   }
 }
-
 //tema
 var html = document.querySelector('html');
 function ChangeColor() {
   html.classList.toggle('darkMode');
 }
-
 //botão home
 function Home() {
   window.location.href = '../index.html';
@@ -23,7 +24,7 @@ function CalcIMC() {
   var inputPeso = document.querySelector('#iptPeso').value;
   var inputAltura = document.querySelector('#iptAltura').value;
   //pega locais
-  var result = document.querySelector('.result');
+  var result = document.querySelector('.resultImc');
   var diagnostico = document.querySelector('.diagnosis');
 
   //ve se os imputs estão vazios
@@ -56,5 +57,19 @@ function CalcIMC() {
       diagnostico.innerHTML =
         textDiagnostico + `<span>${'Obesidade lll'}</span>`;
     }
+  }
+}
+// Calculadora Basica
+function CalcFlash() {
+  var inputCalc = document
+    .querySelector('#inputCalc')
+    .value.replace('x', '*')
+    .replace(',', '.');
+  var result = document.querySelector('#resultCalc');
+
+  try {
+    result.innerHTML = eval(inputCalc);
+  } catch (e) {
+    result.innerHTML = 'Erro no calculo : (';
   }
 }
